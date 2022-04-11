@@ -212,7 +212,7 @@ class Recycle_UCT(UCT):
         if not self.root == None:
             self.root = self.recycle(self.root, context) #breath-first search to find the next root
             
-            if not self.root == None:
+            if self.root is not None:
                 self.discard_garbage(self.root) #clear memory (can be done by a thread)
                 self.root.parent = None
                 self.SUM += self.root.n_value
@@ -264,7 +264,7 @@ class Recycle_UCT(UCT):
     def discard_garbage(self, new_root):
         # 1st go to old root
         old_root = new_root
-        while old_root.parent != None:
+        while old_root.parent is not None:
             old_root = old_root.parent
 
         garbage_nodes = [ch for ch in old_root.children if ch != new_root]
