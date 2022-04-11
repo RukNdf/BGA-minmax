@@ -60,7 +60,7 @@ def simulate_games(game, agent_1:Agent, agent_2:Agent, simulations, use_ui=True)
 
 if __name__ == "__main__":
     #run_game_on_screen(TicTacToe(), RandomAgent(), ShotAgent())
-    run_game_on_screen(RandomAgent(), MinMax2Agent())
+    run_game_on_screen(TicTacToe(), RandomAgent(), MinMax2Agent())
     #print(simulate_games(TicTacToe(),  MCTS.UCT(), MCTS.Recycle_UCT(), 100))
     print(simulate_games(TicTacToe(), ShotAgent(), RandomAgent(), 100))
     #print(simulate_games(TicTacToe(), SequentialHalvingAgent(), MinimaxAgent(), 100))
