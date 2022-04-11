@@ -209,7 +209,7 @@ class Recycle_UCT(UCT):
                       max_depth    =    0):
         r_nodes = 0
 
-        if not self.root == None:
+        if self.root is not None:
             self.root = self.recycle(self.root, context) #breath-first search to find the next root
             
             if self.root is not None:
@@ -255,7 +255,7 @@ class Recycle_UCT(UCT):
         the_chosen_one = None
         for ch in node.children:
             target_node = self.recycle(ch, target)
-            if target_node != None:
+            if target_node is not None:
                 if target_node.n_value > highest_n:
                     the_chosen_one = target_node
         
