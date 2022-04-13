@@ -1,0 +1,1 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/1b0e0e7b238c46a0aac36c730053cfaf)](https://www.codacy.com/gh/RukNdf/BGA-minmax/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=RukNdf/BGA-minmax&amp;utm_campaign=Badge_Grade)
