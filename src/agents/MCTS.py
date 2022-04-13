@@ -47,9 +47,9 @@ class UCT(Agent):
         if len(node.legal_moves) > 0 or (len(node.legal_moves) == 0 and len(node.children) == 0):
             return node
     
-        else:
-            next_node = self.UCB1(node)
-            next_node = self.search(game, self.UCB1(node))
+        
+        next_node = self.UCB1(node)
+        next_node = self.search(game, self.UCB1(node))
             
             return next_node
     
