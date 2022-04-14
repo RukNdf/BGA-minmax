@@ -54,4 +54,5 @@ class TicTacToe(Game):
                 if self.is_legal_move(new_move, board):
                     moves.append(new_move)
         shuffle(moves)
+        
         return moves 

@@ -14,6 +14,7 @@ def get_piece_simbol(piece):
         return '-'
 
 def board_line_to_string(line):
+
     line_string = ""
     for piece in line:
         line_string += get_piece_simbol(piece)+" "
@@ -23,6 +24,7 @@ def print_board_line(line):
     print(board_line_to_string(line))
 
 def print_board(board):
+    
     for line in board:
         print_board_line(line)
 
